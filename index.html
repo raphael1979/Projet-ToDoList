@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<title>Ma To Do List</title>
-	</head>
-	<body>
-		<div>
-			<h2>Liste des Tâches à faire</h2>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Ma To Do List</title>
+</head>
+<body>
+	<h1>TO DO LIST</h1>
+	<form id="todoForm" action="#" onsubmit="todoList()">
+		<input id="todoInput">
+		<button type="button" onclick="todoList()">Click Me</button>
+		<ul id="todoList">
+		</ul>
+		<button type="button" onclick="removeFinished()">Remove finished tasks</button>
+	</form>
 
-		</div>
 
-
-	 	<script src="js/add.js"></script>
-	</body>
+	<script src="js/add.js"></script>
+</body>
 </html>
